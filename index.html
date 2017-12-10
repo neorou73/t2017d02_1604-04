@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>T7</title>
+    <style>
+body p { 
+  font-family: sans-serif; 
+  font-size: 12px; 
+}
+h1 {
+  font-family: serif;
+  font-size: 20px;
+  text-align: right;
+}
+div {
+  border-top: solid 0.1em grey;
+  padding: 5px;
+  margin-left: 25px;
+}
+    </style>
+  </head>
+  <body>
+    <h1>T7</h1>
+    <form method="post" action="#">
+      <div class="plaintext-question">
+        <div class="number">1.</div>
+        <div class="prompt">This is a prompt, please provide an answer:</div>
+        <div class="response"><textarea name="response-1" class="response-textarea"></textarea></div>
+      </div>
+
+      <div class="single-choice">
+        <div class="number">2.</div>
+        <div class="prompt">Please choose only one of the choices below.</div>
+        <div class="response">
+          <input type="radio" name="response-2" class="response-single-choice" value="choice-a"/>
+          <label for="choice-a"/>A</label>
+          <input type="radio" name="response-2" class="response-single-choice" value="choice-b"/>
+          <label for="choice-b"/>B</label>
+          <input type="radio" name="response-2" class="response-single-choice" value="choice-c"/>
+          <label for="choice-c"/>C</label>
+          <input type="radio" name="response-2" class="response-single-choice" value="choice-d"/>
+          <label for="choice-d"/>D</label>
+        </div>
+      </div>
+
+      <div class="single-choice-with-writein">
+        <div class="number">3.</div>
+        <div class="prompt">Please choose only one of the choices below. If none apply, please write in your choice.</div>
+        <div class="response">
+          <input type="radio" name="response-2" class="response-single-choice-with-writein" value="choice-a"/>
+          <label for="choice-a"/>A</label>
+          <input type="radio" name="response-2" class="response-single-choice" value="choice-b"/>
+          <label for="choice-b"/>B</label>
+          <input type="radio" name="response-2" class="response-single-choice" value="choice-c"/>
+          <label for="choice-c"/>C</label>
+          <input type="radio" name="response-2" class="response-single-choice" value="choice-d"/>
+          <label for="choice-d"/>D</label>
+          <span>..or write in your response:</span>
+          <input type="text" name="response-2" class="response-single-choice-writein" value=""/>
+        </div>
+      </div>
+
+      <div class="multi-choice">
+      </div>
+
+      <div class="multi-choice-with-writein">
+      </div>
+
+      <div><input type="submit" value="save"/></div>
+    </form>
+  </body>
+</html>
